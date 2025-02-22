@@ -12,7 +12,7 @@ from .config import settings
 
 app = FastAPI()
 
-origins = ["https://www.google.com"]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
